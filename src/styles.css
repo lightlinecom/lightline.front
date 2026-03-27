@@ -1,3 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+@font-face {
+    font-family: 'EBGaramond';
+    src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EBGaramond';
+    src: url('/fonts/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+}
+
+
+@theme {
+  --font-lightline: 'EBGaramond', serif;
+}
