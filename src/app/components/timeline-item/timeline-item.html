@@ -1,0 +1,23 @@
+<!-- Mark point -->
+<div class="absolute w-4 h-4 left-0 transform -translate-x-1/2 rounded-full bg-blue-500"></div>
+
+<!-- Card -->
+<div class="ml-6 p-4 bg-white rounded-lg shadow-sm border border-gray-200">
+
+  <!-- Date -->
+  <h2 class="font-lightline text-xs text-gray-500">{{ event().date | date:'medium' }}</h2>
+
+  <!-- Title -->
+  <h1 class="font-lightline text-sm font-semibold text-gray-900">{{ event().title }}</h1>
+
+  <!-- Description -->
+  <p class="font-lightline text-sm text-gray-700 leading-relaxed">{{ event().description }}
+  </p>
+
+  <!-- Source and more details  -->
+  @if(event().source){
+    <div class="font-lightline text-xs text-gray-500 mt-4">
+      <span>Fuente(s): {{ event().source }}</span>
+    </div>
+  }
+</div>

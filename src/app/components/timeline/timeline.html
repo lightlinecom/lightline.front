@@ -1,0 +1,15 @@
+<div class="p-4">
+  <ul class="relative space-y-10">
+
+    <!-- Vertical line -->
+    <!-- <div class="absolute w-1 bg-linear-to-b from-blue-500 to-red-600 h-full left-0 transform -translate-x-1/2"></div> -->
+    <div class="absolute w-1 bg-blue-500 h-full left-0 transform -translate-x-1/2"></div>
+
+    <!-- Items -->
+     @for(event of events(); track event.id){
+      <li>
+        <app-timeline-item [event]="event"/>
+      </li>
+     }
+  </ul>
+</div>

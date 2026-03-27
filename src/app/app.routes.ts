@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
 import { Layout } from './shared/layout/layout';
-import { Timeline } from './pages/timeline/timeline';
+import { Story } from './pages/story/story';
 
 export const routes: Routes = [
   {
-    path: 'timeline',
+    path: 'story',
     component: Layout,
     children: [
       {
-        path: ':id',
-        component: Timeline
+        path: ':id/timeline/:timelineId',
+        component: Story
       }
     ]
   }
