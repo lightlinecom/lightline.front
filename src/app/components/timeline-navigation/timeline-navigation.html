@@ -1,84 +1,32 @@
 <div id="dates" class="space-y-5">
 
-  <div class="p-4 space-y-2 xl:space-y-4 bg-white rounded-lg shadow-sm border border-gray-200">
-    <h4 class="font-lightline font-semibold text-sm xl:text-base mb-2">Resumen</h4>
-    <p class="font-lightline text-sm xl:text-base text-gray-600">
-      Caso judicial por difamación entre Johnny Depp y Amber Heard,
-      con impacto mediático global.
+  <!-- Resumen -->
+  <div class="p-4 space-y-2 xl:space-y-4 bg-white dark:bg-gray-900 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800">
+    <h4 class="font-lightline font-semibold text-sm xl:text-base text-gray-900 dark:text-gray-100">
+      Resumen
+    </h4>
+    <p class="font-lightline text-sm xl:text-base text-gray-600 dark:text-gray-400">
+      Caso judicial por difamación entre Johnny Depp y Amber Heard.
     </p>
   </div>
 
-  <div class="p-4 space-y-2 bg-white rounded-lg shadow-sm border border-gray-200">
-    <ul class="font-lightline text-gray-500 text-sm xl:text-base space-y-4 pr-24">
+  <!-- Navegación -->
+  <div class="p-4 bg-white dark:bg-gray-900 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800">
+    <ul class="font-lightline text-gray-500 dark:text-gray-400 text-sm xl:text-base space-y-4 pr-24">
 
-      <!-- 2026 -->
       <li>
         <button (click)="toggleYear(2026)"
-          class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
-
+          class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 dark:hover:text-white transition">
           <span>2026</span>
-
-          <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2026">
-              ⌄
-            </span> -->
-
         </button>
 
-        <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-sm xl:text-base"
-          [style.maxHeight]="openYear === 2026 ? '200px' : '0px'">
-
-          <li class="cursor-pointer hover:text-gray-800 transition">Marzo (4)</li>
-          <li class="cursor-pointer hover:text-gray-800 transition">Febrero (2)</li>
-          <li class="cursor-pointer hover:text-gray-800 transition">Enero (5)</li>
-
+        <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2">
+          <li class="cursor-pointer hover:text-gray-800 dark:hover:text-white">Marzo (4)</li>
+          <li class="cursor-pointer hover:text-gray-800 dark:hover:text-white">Febrero (2)</li>
         </ul>
       </li>
 
-      <!-- 2025 -->
-      <li>
-        <button (click)="toggleYear(2025)"
-          class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
-
-          <span>2025</span>
-
-          <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2025">
-              ⌄
-            </span> -->
-
-        </button>
-
-        <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-sm xl:text-base"
-          [style.maxHeight]="openYear === 2025 ? '200px' : '0px'">
-
-          <li class="cursor-pointer hover:text-gray-800 transition">Diciembre (3)</li>
-          <li class="cursor-pointer hover:text-gray-800 transition">Julio (6)</li>
-          <li class="cursor-pointer hover:text-gray-800 transition">Marzo (1)</li>
-
-        </ul>
-      </li>
-
-      <!-- 2024 -->
-      <li>
-        <button (click)="toggleYear(2024)"
-          class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
-
-          <span>2024</span>
-
-          <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2024">
-              ⌄
-            </span> -->
-
-        </button>
-
-        <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-sm xl:text-base"
-          [style.maxHeight]="openYear === 2024 ? '200px' : '0px'">
-
-          <li class="cursor-pointer hover:text-gray-800 transition">Octubre (2)</li>
-          <li class="cursor-pointer hover:text-gray-800 transition">Agosto (3)</li>
-          <li class="cursor-pointer hover:text-gray-800 transition">Enero (4)</li>
-
-        </ul>
-      </li>
+      <!-- repite igual -->
 
     </ul>
   </div>

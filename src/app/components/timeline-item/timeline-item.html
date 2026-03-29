@@ -2,18 +2,16 @@
 <div class="absolute w-4 h-4 md:w-6 md:h-6 left-0 transform -translate-x-1/2 rounded-full bg-blue-500"></div>
 
 <!-- Card -->
-<div class="ml-6 p-4 space-y-2 xl:space-y-4 bg-white rounded-lg shadow-sm border border-gray-200">
+<div class="ml-6 p-4 space-y-2 xl:space-y-4 bg-white dark:bg-gray-900 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800 hover:shadow-md dark:hover:bg-gray-800 transition">
 
   <!-- Date + Icon -->
   <div class="flex items-center justify-between">
 
-    <!-- Date -->
-    <h2 class="font-lightline uppercase tracking-wide text-sm xl:text-base text-gray-500">
+    <h2 class="font-lightline uppercase tracking-wide text-sm xl:text-base text-gray-500 dark:text-gray-400">
       {{ event().date | date:'medium' }}
     </h2>
 
-    <!-- Icono -->
-    <div class="text-gray-400">
+    <div class="text-gray-400 dark:text-gray-500">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 opacity-60" fill="none" viewBox="0 0 24 24"
         stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round"
@@ -22,16 +20,20 @@
     </div>
 
   </div>
+
   <!-- Title -->
-  <h1 class="font-lightline text-lg xl:text-2xl font-semibold">{{ event().title }}</h1>
+  <h1 class="font-lightline text-lg xl:text-2xl font-semibold text-gray-900 dark:text-gray-100">
+    {{ event().title }}
+  </h1>
 
   <!-- Description -->
-  <p class="font-lightline text-base xl:text-base text-gray-600 leading-relaxed">{{ event().description }}
+  <p class="font-lightline text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+    {{ event().description }}
   </p>
 
-  <!-- Source and more details  -->
+  <!-- Source -->
   @if(event().source){
-  <div class="font-lightline text-sm text-gray-500 mt-4">
+  <div class="font-lightline text-sm text-gray-500 dark:text-gray-500 mt-4">
     <span>Fuente(s): {{ event().source }}</span>
   </div>
   }
