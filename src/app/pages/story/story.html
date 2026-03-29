@@ -3,4 +3,23 @@
   <p class="text-lg lg:text-xl xl:text-2xl">Caso judicial por difamación entre Johnny Depp y Amber Heard, con impacto mediático global.</p>
 </div>
 
+<div class="my-8 border-y border-gray-800 py-5 flex items-center justify-center lg:justify-between">
+
+  <!-- Autor -->
+  <div class="flex items-center gap-3">
+    <div class="w-9 h-9 rounded-full bg-gray-600"></div>
+
+    <div class="flex flex-col leading-tight">
+      <span class="text-gray-200 font-medium">John Doe</span>
+      <span class="text-xs text-gray-500">Editor · Actualidad judicial</span>
+    </div>
+  </div>
+
+  <!-- Extra info (solo desktop) -->
+  <div class="hidden lg:flex items-center gap-6 text-xs text-gray-500">
+    <span>Lectura: 4 min</span>
+  </div>
+
+</div>
+
 <app-timeline [events]="events"></app-timeline>
