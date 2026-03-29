@@ -1,10 +1,8 @@
-<app-timeline-live-indicator/>
-
 <div class="p-4">
 
-  <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] lg:gap-24">
+  <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto]">
 
-    <div id="timeline">
+    <div id="timeline" class="lg:border-r lg:pr-10 lg:border-gray-200 w-3xl">
       <ul class="relative space-y-10">
 
         <!-- Vertical line -->
@@ -12,15 +10,27 @@
 
         <!-- Items -->
         @for(event of events(); track event.id){
-        <li>
-          <app-timeline-item [event]="event" />
-        </li>
+          <!-- Year -->
+          @if(event.id === 1){
+            <div class="text-lg font-bold uppercase ml-6">
+              Inicio del juicio
+            </div>
+          }
+
+          <!-- Year -->
+          <div id="year-2022" class="text-xs text-gray-400 ml-6">
+            2022
+          </div>
+
+          <li>
+            <app-timeline-item [event]="event" />
+          </li>
         }
       </ul>
 
     </div>
 
-    <app-timeline-navigation/>
+    <app-timeline-navigation class="ml-10" />
 
 
-</div>
+  </div>

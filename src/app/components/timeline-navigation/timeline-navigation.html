@@ -1,74 +1,85 @@
-<div id="dates" class="hidden lg:block sticky top-40 self-start">
-  <ul class="font-lightline text-gray-500 text-2xl space-y-4 pr-24">
+<div id="dates" class="hidden lg:block space-y-5">
 
-    <!-- 2026 -->
-    <li>
-      <button (click)="toggleYear(2026)"
-        class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
+  <div class="p-4 space-y-2 bg-white rounded-lg shadow-sm border border-gray-200">
+    <h4 class="font-semibold text-sm mb-2">Resumen</h4>
+    <p class="text-sm text-gray-600">
+      Caso judicial por difamación entre Johnny Depp y Amber Heard,
+      con impacto mediático global.
+    </p>
+  </div>
 
-        <span>2026</span>
+  <div class="p-4 space-y-2 bg-white rounded-lg shadow-sm border border-gray-200">
+    <ul class="font-lightline text-gray-500 text-2xl space-y-4 pr-24">
 
-        <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2026">
+      <!-- 2026 -->
+      <li>
+        <button (click)="toggleYear(2026)"
+          class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
+
+          <span>2026</span>
+
+          <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2026">
               ⌄
             </span> -->
 
-      </button>
+        </button>
 
-      <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-lg"
-        [style.maxHeight]="openYear === 2026 ? '200px' : '0px'">
+        <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-lg"
+          [style.maxHeight]="openYear === 2026 ? '200px' : '0px'">
 
-        <li class="cursor-pointer hover:text-gray-800 transition">Marzo (4)</li>
-        <li class="cursor-pointer hover:text-gray-800 transition">Febrero (2)</li>
-        <li class="cursor-pointer hover:text-gray-800 transition">Enero (5)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Marzo (4)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Febrero (2)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Enero (5)</li>
 
-      </ul>
-    </li>
+        </ul>
+      </li>
 
-    <!-- 2025 -->
-    <li>
-      <button (click)="toggleYear(2025)"
-        class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
+      <!-- 2025 -->
+      <li>
+        <button (click)="toggleYear(2025)"
+          class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
 
-        <span>2025</span>
+          <span>2025</span>
 
-        <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2025">
+          <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2025">
               ⌄
             </span> -->
 
-      </button>
+        </button>
 
-      <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-lg"
-        [style.maxHeight]="openYear === 2025 ? '200px' : '0px'">
+        <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-lg"
+          [style.maxHeight]="openYear === 2025 ? '200px' : '0px'">
 
-        <li class="cursor-pointer hover:text-gray-800 transition">Diciembre (3)</li>
-        <li class="cursor-pointer hover:text-gray-800 transition">Julio (6)</li>
-        <li class="cursor-pointer hover:text-gray-800 transition">Marzo (1)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Diciembre (3)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Julio (6)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Marzo (1)</li>
 
-      </ul>
-    </li>
+        </ul>
+      </li>
 
-    <!-- 2024 -->
-    <li>
-      <button (click)="toggleYear(2024)"
-        class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
+      <!-- 2024 -->
+      <li>
+        <button (click)="toggleYear(2024)"
+          class="cursor-pointer flex items-center justify-between w-full hover:text-gray-800 transition">
 
-        <span>2024</span>
+          <span>2024</span>
 
-        <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2024">
+          <!-- <span class="transition-transform duration-200" [class.rotate-180]="openYear === 2024">
               ⌄
             </span> -->
 
-      </button>
+        </button>
 
-      <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-lg"
-        [style.maxHeight]="openYear === 2024 ? '200px' : '0px'">
+        <ul class="overflow-hidden transition-all duration-300 mt-2 ml-4 space-y-2 text-lg"
+          [style.maxHeight]="openYear === 2024 ? '200px' : '0px'">
 
-        <li class="cursor-pointer hover:text-gray-800 transition">Octubre (2)</li>
-        <li class="cursor-pointer hover:text-gray-800 transition">Agosto (3)</li>
-        <li class="cursor-pointer hover:text-gray-800 transition">Enero (4)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Octubre (2)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Agosto (3)</li>
+          <li class="cursor-pointer hover:text-gray-800 transition">Enero (4)</li>
 
-      </ul>
-    </li>
+        </ul>
+      </li>
 
-  </ul>
+    </ul>
+  </div>
 </div>
