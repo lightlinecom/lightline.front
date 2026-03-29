@@ -1,5 +1,5 @@
 <!-- Mark point -->
-<div class="absolute w-4 h-4 left-0 transform -translate-x-1/2 rounded-full bg-blue-500"></div>
+<div class="absolute w-4 h-4 md:w-6 md:h-6 left-0 transform -translate-x-1/2 rounded-full bg-blue-500"></div>
 
 <!-- Card -->
 <div class="ml-6 p-4 space-y-2 bg-white rounded-lg shadow-sm border border-gray-200">
@@ -8,7 +8,7 @@
   <div class="flex items-center justify-between">
 
     <!-- Fecha -->
-    <h2 class="font-lightline uppercase tracking-wide text-xs text-gray-500">
+    <h2 class="font-lightline uppercase tracking-wide text-xs md:text-lg text-gray-500">
       {{ event().date | date:'medium' }}
     </h2>
 
@@ -23,15 +23,15 @@
 
   </div>
   <!-- Title -->
-  <h1 class="font-lightline text-sm font-semibold text-gray-900">{{ event().title }}</h1>
+  <h1 class="font-lightline text-sm md:text-2xl font-semibold text-gray-900">{{ event().title }}</h1>
 
   <!-- Description -->
-  <p class="font-lightline text-sm text-gray-700 leading-relaxed">{{ event().description }}
+  <p class="font-lightline text-sm md:text-xl text-gray-700 leading-relaxed">{{ event().description }}
   </p>
 
   <!-- Source and more details  -->
   @if(event().source){
-  <div class="font-lightline text-xs text-gray-500 mt-4">
+  <div class="font-lightline text-xs md:text-lg text-gray-500 mt-4">
     <span>Fuente(s): {{ event().source }}</span>
   </div>
   }
