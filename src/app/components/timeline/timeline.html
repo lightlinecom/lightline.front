@@ -3,7 +3,12 @@
   <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto]">
 
     <!-- Timeline -->
-    <div id="timeline" class="lg:border-r lg:pr-10 lg:border-gray-200 lg:w-3xl">
+    <div id="timeline" class="lg:border-r lg:pr-10 lg:border-gray-200 lg:max-w-3xl">
+
+      <div class="ml-6 font-lightline text-lg font-bold uppercase mb-10">
+        Inicio del juicio en California
+      </div>
+
       <ul class="relative space-y-10">
 
         <!-- Vertical line -->
@@ -11,21 +16,17 @@
 
         <!-- Items -->
         @for(event of events(); track event.id){
-          <!-- Year -->
-          @if(event.id === 1){
-            <div class="text-lg font-bold uppercase ml-6">
-              Inicio del juicio
-            </div>
-          }
 
+        @if(event.id === 1){
           <!-- Year -->
-          <div id="year-2022" class="text-xs text-gray-400 ml-6">
+          <div id="year-2022" class="font-lightline text-xs text-gray-400 ml-6">
             2022
           </div>
+        }
 
-          <li>
-            <app-timeline-item [event]="event" />
-          </li>
+        <li>
+          <app-timeline-item [event]="event" />
+        </li>
         }
       </ul>
 
