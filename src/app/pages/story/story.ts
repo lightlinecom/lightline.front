@@ -57,6 +57,20 @@ export class Story {
       title: 'Veredicto del jurado',
       description: 'El jurado falla mayoritariamente a favor de Johnny Depp, otorgándole compensación por daños, aunque también concede una compensación menor a Amber Heard.',
       source: 'Tribunal de Virginia, 2022'
+    },
+    {
+      id: 9,
+      date: new Date('2022-07-01T15:00:00'),
+      title: 'Veredicto del jurado',
+      description: 'El jurado falla mayoritariamente a favor de Johnny Depp, otorgándole compensación por daños, aunque también concede una compensación menor a Amber Heard.',
+      source: 'Tribunal de Virginia, 2022'
+    },
+    {
+      id: 10,
+      date: new Date('2022-08-01T15:00:00'),
+      title: 'Veredicto del jurado',
+      description: 'El jurado falla mayoritariamente a favor de Johnny Depp, otorgándole compensación por daños, aunque también concede una compensación menor a Amber Heard.',
+      source: 'Tribunal de Virginia, 2022'
     }
   ];
 }
