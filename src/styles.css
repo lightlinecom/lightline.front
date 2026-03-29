@@ -2,6 +2,10 @@
 
 @import 'tailwindcss';
 
+html, body {
+  @apply bg-white dark:bg-gray-900;
+}
+
 @font-face {
     font-family: 'EBGaramond';
     src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
