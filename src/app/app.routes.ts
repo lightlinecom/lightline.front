@@ -11,6 +11,10 @@ export const routes: Routes = [
         path: ':id/timeline/:timelineId',
         component: Story
       }
-    ]
+    ],
+  },
+  {
+    path: '**',
+    redirectTo: 'story/1/timeline/1'
   }
 ];
